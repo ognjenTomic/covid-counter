@@ -79,7 +79,7 @@
 
                 var nextYear = (new Date()).getFullYear() + 1;
 
-                Tick.count.up('2020-03-16 08:00:00').onupdate = function(value) {
+                Tick.count.up('{{ __('time.start') }}').onupdate = function(value) {
                     tick.value = value;
                 };
 
