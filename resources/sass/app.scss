@@ -1,7 +1,8 @@
 html, body {
     background-color: #fff;
-    color: #636b6f;
+    color: #050038;
     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
     font-weight: 200;
     height: 100vh;
     margin: 0;
@@ -15,6 +16,8 @@ html, body {
     align-items: center;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .position-ref {
@@ -31,8 +34,17 @@ html, body {
     text-align: center;
 }
 
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.emoji {
+    font-size: 4em;
+}
+
 .title {
-    font-size: 84px;
+    font-size: 1.8em;
 }
 
 .m-b-md {
@@ -40,7 +52,6 @@ html, body {
 }
 
 .tick {
-    font-size:1rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
@@ -52,4 +63,71 @@ html, body {
 .tick-group {
     margin:0 .25em;
     text-align:center;
+}
+
+.yellow {
+    background: #ffd02f;
+}
+
+.text-block {
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+
+.yellow {
+    background: #ffd02f;
+}
+
+.blue {
+    background: #3f53d9;
+    color: #fff;
+}
+
+.rose {
+    background: #ff6575;
+    color: #fff;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+    blockquote {
+        font-weight: 100;
+        font-size: 1.2rem;
+        max-width: 400px;
+        line-height: 1.4;
+        position: relative;
+        margin: 0;
+        padding: .5rem;
+    }
+
+    blockquote:before,
+    blockquote:after {
+        position: absolute;
+        font-size: 6rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    blockquote:before {
+        content: '“';
+        left: -2rem;
+        top: -2rem;
+    }
+
+    blockquote:after {
+        content: '”';
+        right: -2rem;
+        bottom: 1rem;
+    }
+
+    cite {
+        line-height: 3;
+        text-align: left;
+    }
 }

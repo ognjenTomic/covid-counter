@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'start' => '2020-03-17 12:00:00',
     'year_plural' => 'années',
     'year_singular' => 'an',
     'month_plural' => 'mois',

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Covid Counter</title>
+        <title>Covid Memo</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -16,35 +16,62 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
+
+                 <div class="emoji m-b-md">
+                    😷☀️
+                </div>
+                <div class="title m-b-md">
+                    {!! __('messages.welcome', ['today' => $today, 'country' => $country]) !!}
+                </div>
                 <div class="title m-b-md">
                     {{ __('messages.title') }}
                 </div>
 
-                <div class="tick"
-                     data-did-init="handleTickInit">
+                <div class="container">
 
-                    <div data-repeat="true"
-                         data-layout="horizontal center fit"
-                         data-transform="preset(d, h, m, s) -> delay">
+                    @if ($start === 'unknown')
 
-                        <div class="tick-group">
+                        {{ __('messages.unknown') }}
 
-                            <div data-key="value"
-                                 data-repeat="true"
-                                 data-transform="pad(00) -> split -> delay">
+                    @else
 
-                                <span data-view="flip"></span>
+                        <div class="tick m-b-md"
+                             data-did-init="handleTickInit">
+
+                            <div data-repeat="true"
+                                 data-layout="horizontal center fit"
+                                 data-transform="preset(d, h, m, s) -> delay">
+
+                                <div class="tick-group">
+
+                                    <div data-key="value"
+                                         data-repeat="true"
+                                         data-transform="pad(00) -> split -> delay">
+
+                                        <span data-view="flip"></span>
+
+                                    </div>
+
+                                    <span data-key="label"
+                                          data-view="text"
+                                          class="tick-label"></span>
+
+                                </div>
 
                             </div>
 
-                            <span data-key="label"
-                                  data-view="text"
-                                  class="tick-label"></span>
-
                         </div>
+                    @endif
 
-                    </div>
+                </div>
 
+                <div class="title m-b-md">
+                    {!! __('messages.citation') !!}
+                </div>
+
+                <div class="quote">
+                    <blockquote>{{ $quote }}</blockquote>
+                    <cite>— Winston Churchill</cite>
                 </div>
 
             </div>
@@ -79,7 +106,7 @@
 
                 var nextYear = (new Date()).getFullYear() + 1;
 
-                Tick.count.up('{{ __('time.start') }}').onupdate = function(value) {
+                Tick.count.up('{{ $start }}').onupdate = function(value) {
                     tick.value = value;
                 };
 
