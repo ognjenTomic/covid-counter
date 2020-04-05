@@ -11,7 +11,7 @@ class Home extends Controller
 {
     public function index()
     {
-        $geoData = geoip('85.58.94.64');
+        $geoData = geoip(env('IP'));
         $date = Carbon::today();
         $today = ucwords($date->isoFormat('dddd Do MMMM'));
         $quote = __('quotes.' . rand(0,6));
@@ -37,6 +37,7 @@ class Home extends Controller
 
         return view('covid.index',[
             'country' => __('country.' . strtolower($geoData['country'])),
+            'city' => $geoData['city'],
             'start' => $start,
             'today' => $today,
             'quote' => $quote
