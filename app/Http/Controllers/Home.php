@@ -16,6 +16,12 @@ class Home extends Controller
         $today = ucwords($date->isoFormat('dddd Do MMMM'));
         $quote = __('quotes.' . rand(0,6));
 
+        if (isset($geoData['country'])) {
+            # code...
+        } else {
+            $geoData['country'] = $geoData['city'] = 'unknown';
+        }
+
         // Lockdown start date
         switch ($geoData['country']) {
             case 'Spain':
