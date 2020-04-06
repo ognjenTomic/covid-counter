@@ -11,11 +11,13 @@ class Home extends Controller
 {
     public function index()
     {
+        $geoData = geoip(env('IP'));
+        dd($geoData);
         $date = Carbon::today();
         $today = ucwords($date->isoFormat('dddd Do MMMM'));
         $quote = __('quotes.' . rand(0,6));
 
-        if ($geoData = geoip(env('IP'))) {
+        if (isset($geoData['country'])) {
             // Lockdown start date
             switch ($geoData['country']) {
                 case 'Spain':
