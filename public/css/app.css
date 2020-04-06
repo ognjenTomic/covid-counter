@@ -1,1 +1,242 @@
-body,html{background-color:#fff;color:#050038;font-family:Nunito,sans-serif;font-size:16px;font-weight:200;margin:0}@media only screen and (max-width:600px){body{font-size:10px}}.flex-center{align-items:center;display:flex;justify-content:center;padding:0;margin:0}.position-ref{position:relative}.top-right{position:absolute;right:10px;top:18px}.content{text-align:center}.container{max-width:500px;margin:50px auto}h1{font-size:3.2em}.emoji{font-size:4em}.title{font-size:1.8em}.m-b-md{margin:0 5px 30px}.tick{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}.tick-label{font-size:.375em;text-align:center}.tick-group{margin:0 .25em;text-align:center}.text-block{display:inline-block;padding:5px 15px;font-weight:600}.yellow{background:#ffd02f}.blue{background:#3f53d9;color:#fff}.rose{background:#ff6575;color:#fff}.quote{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:30px}.quote blockquote{font-weight:100;font-size:1.2rem;max-width:500px;line-height:1.4;position:relative;margin:0;padding:.5rem}.quote blockquote:after,.quote blockquote:before{position:absolute;font-size:6rem;width:2rem;height:2rem}.quote blockquote:before{content:"\201C";left:-2rem;top:-2rem}.quote blockquote:after{content:"\201D";right:-2rem;bottom:1rem}.quote cite{line-height:3;text-align:left}.footer-distributed{background-color:#050038;box-shadow:0 1px 1px 0 rgba(0,0,0,.12);box-sizing:border-box;width:100%;text-align:left;font:normal 16px sans-serif;padding:45px 50px;margin-top:60px}.footer-distributed .footer-left p{color:#8f9296;font-size:14px;margin:0}.footer-distributed p.footer-links{font-size:18px;font-weight:700;color:#fff;margin:0 0 10px;padding:0;transition:.25s ease}.footer-distributed p.footer-links a{display:inline-block;line-height:1.8;text-decoration:none;color:inherit;transition:.25s ease;text-transform:uppercase}.footer-distributed p.footer-links a:before{content:"\B7";font-size:20px;left:0;color:#fff;display:inline-block;padding-right:5px}.footer-distributed .footer-links .link-1:before{content:none}.footer-distributed .footer-right{float:right;margin-top:6px;max-width:180px}.footer-distributed .footer-right a{display:inline-block;width:35px;height:35px;background-color:#ffd02f;border-radius:2px;font-size:20px;color:#050038;text-align:center;line-height:35px;margin-left:3px;transition:all .25s}.footer-distributed .footer-right a:hover{transform:scale(1.1);-webkit-transform:scale(1.1)}.footer-distributed p.footer-links a:hover{text-decoration:underline}@media (max-width:600px){.footer-distributed .footer-left,.footer-distributed .footer-right{text-align:center}.footer-distributed .footer-right{float:none;margin:0 auto 20px}.footer-distributed .footer-left p.footer-links{line-height:1.8}}
+@charset "UTF-8";
+
+html,
+body {
+  background-color: #050038;
+  color: #050038;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 100px 0;
+  background-color: #fff;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+.emoji {
+  font-size: 4em;
+}
+
+.title {
+  font-size: 1.8em;
+}
+
+.m-b-md {
+  margin: 0 5px 30px 5px;
+}
+
+.tick {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.tick-label {
+  font-size: 0.375em;
+  text-align: center;
+}
+
+.tick-group {
+  margin: 0 0.25em;
+  text-align: center;
+}
+
+.yellow {
+  background: #ffd02f;
+}
+
+.text-block {
+  display: inline-block;
+  padding: 5px 15px;
+  font-weight: 600;
+}
+
+.yellow {
+  background: #ffd02f;
+}
+
+.blue {
+  background: #3f53d9;
+  color: #fff;
+}
+
+.rose {
+  background: #ff6575;
+  color: #fff;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.quote blockquote {
+  font-weight: 100;
+  font-size: 1.4rem;
+  max-width: 500px;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .quote blockquote {
+    max-width: 250px;
+    font-size: 1.1rem;
+  }
+}
+
+.quote blockquote:before,
+.quote blockquote:after {
+  position: absolute;
+  font-size: 6rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.quote blockquote:before {
+  content: "\201C";
+  left: -2rem;
+  top: -2rem;
+}
+
+.quote blockquote:after {
+  content: "\201D";
+  right: -2rem;
+  bottom: 1rem;
+}
+
+.quote cite {
+  line-height: 3;
+  text-align: left;
+}
+
+.footer-distributed {
+  background-color: #050038;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+  text-transform: uppercase;
+}
+
+.footer-distributed p.footer-links a:before {
+  content: "\B7";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #ffd02f;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #050038;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+

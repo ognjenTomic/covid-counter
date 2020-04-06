@@ -1,5 +1,5 @@
 html, body {
-    background-color: #fff;
+    background-color: #050038;
     color: #050038;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -17,8 +17,9 @@ html, body {
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 0;
     margin: 0;
+    padding: 0 0 100px 0;
+    background-color: #fff;
 }
 
 .position-ref {
@@ -103,12 +104,19 @@ h1 {
 
     blockquote {
         font-weight: 100;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         max-width: 500px;
         line-height: 1.4;
         position: relative;
         margin: 0;
         padding: .5rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        blockquote {
+            max-width: 250px;
+            font-size: 1.1rem;
+        }
     }
 
     blockquote:before,
@@ -145,7 +153,6 @@ h1 {
     text-align: left;
     font: normal 16px sans-serif;
     padding: 45px 50px;
-    margin-top: 60px;
 
     .footer-left p {
         color: #8f9296;
