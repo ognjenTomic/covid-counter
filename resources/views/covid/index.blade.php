@@ -17,7 +17,7 @@
                     <h1><span class="text-block blue">Lost</span><span class="text-block yellow">In</span><span class="text-block rose">Lockdown</span></h1>
                 </div>
                 <div class="emoji m-b-md">
-                    😷🚪☀️
+                    😷🏡
                 </div>
                 <div class="title m-b-md">
                     @if ($start === 'unknown')
