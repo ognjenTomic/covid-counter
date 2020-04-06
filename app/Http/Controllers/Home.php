@@ -11,14 +11,15 @@ class Home extends Controller
 {
     public function index()
     {
-        $geoData = geoip(env('IP'));
+        $geoData = geoip()->getLocation(env('IP'));
         $date = Carbon::today();
         $today = ucwords($date->isoFormat('dddd Do MMMM'));
         $quote = __('quotes.' . rand(0,6));
 
-        if (isset($geoData['default_location'])) {
-            $geoData['country'] = $geoData['city'] = 'unknown';
-        } else {
+        dd($geoData);
+
+        $start = 'unknown';
+        if ($geoData instanceof Torann\GeoIP\Location){
             // Lockdown start date
             switch ($geoData['country']) {
                 case 'Spain':
@@ -32,11 +33,9 @@ class Home extends Controller
                 case 'France':
                     $start = '2020-03-17 12:00:00';
                     break;
-
-                default:
-                    $start = 'unknown';
-                    break;
             }
+        } else {
+            $geoData['country'] = $geoData['city'] = 'unknown';
         }
 
         return view('covid.index',[
