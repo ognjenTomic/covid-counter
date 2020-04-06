@@ -6,7 +6,7 @@
         <title>{{ __('seo.title') }}</title>
          <meta name="description" content="{{ __('seo.description') }}"/>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
         <link rel="stylesheet" href="css/flip.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -124,7 +124,7 @@
         }
     </script>
 
-    <script src="js/app.js"></script>
+    <script src="{{ mix('/js/app.js') }}"></script>
     <script src="js/flip.min.js"></script>
 </body>
 </html>
