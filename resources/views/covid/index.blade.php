@@ -21,7 +21,7 @@
                 </div>
                 <div class="title m-b-md">
                     @if ($start === 'unknown')
-                    {{ __('messages.welcome-unkown') }}
+                    {!! __('messages.welcome-unknown', ['today' => $today]) !!}
                     @else
                     {!! __('messages.welcome', ['today' => $today, 'country' => $country, 'city' => $city]) !!}
                     @endif
