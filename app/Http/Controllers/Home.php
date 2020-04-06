@@ -12,12 +12,13 @@ class Home extends Controller
     public function index()
     {
         $geoData = geoip(env('IP'));
-        dd($geoData);
         $date = Carbon::today();
         $today = ucwords($date->isoFormat('dddd Do MMMM'));
         $quote = __('quotes.' . rand(0,6));
 
-        if (isset($geoData['country'])) {
+        if (isset($geoData['default_location'])) {
+            $geoData['country'] = $geoData['city'] = 'unknown';
+        } else {
             // Lockdown start date
             switch ($geoData['country']) {
                 case 'Spain':
@@ -36,8 +37,6 @@ class Home extends Controller
                     $start = 'unknown';
                     break;
             }
-        } else {
-            $geoData['country'] = $geoData['city'] = 'unknown';
         }
 
         return view('covid.index',[
