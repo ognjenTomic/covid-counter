@@ -7,6 +7,12 @@ html, body {
     margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 10px;
+    }
+}
+
 .flex-center {
     align-items: center;
     display: flex;
@@ -32,6 +38,10 @@ html, body {
 .container {
     max-width: 500px;
     margin: 50px auto;
+}
+
+h1 {
+    font-size: 3.2em;
 }
 
 .emoji {
@@ -135,6 +145,7 @@ html, body {
     text-align: left;
     font: normal 16px sans-serif;
     padding: 45px 50px;
+    margin-top: 60px;
 
     .footer-left p {
         color: #8f9296;

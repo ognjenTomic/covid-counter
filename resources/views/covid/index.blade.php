@@ -13,7 +13,7 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <div class="emoji m-b-md">
+                <div class="m-b-md">
                     <h1><span class="text-block blue">Lost</span><span class="text-block yellow">In</span><span class="text-block rose">Lockdown</span></h1>
                 </div>
                 <div class="emoji m-b-md">
