@@ -79,7 +79,7 @@
                 <a class="link-1" href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019">COVID19</a>
                 <a href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public">{{ __('messages.advices') }}</a>
                 <a href="https://google.com/covid19-map">{{ __('messages.map') }}</a>
-                <a href="https://www.amazon.com/s?k=toilet+paper">🧻/a>
+                <a href="https://www.amazon.com/s?k=toilet+paper">🧻</a>
                 <a href="#">#stayathome</a>
             </p>
 
