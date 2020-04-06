@@ -16,10 +16,8 @@ class Home extends Controller
         $today = ucwords($date->isoFormat('dddd Do MMMM'));
         $quote = __('quotes.' . rand(0,6));
 
-        dd($geoData);
-
         $start = 'unknown';
-        if ($geoData instanceof Torann\GeoIP\Location){
+        if (isset($geoData['country'])){
             // Lockdown start date
             switch ($geoData['country']) {
                 case 'Spain':
@@ -39,9 +37,9 @@ class Home extends Controller
         }
 
         return view('covid.index',[
-            'country' => __('country.' . strtolower($geoData['country'])),
-            'city' => $geoData['city'],
-            'start' => $start,
+            'country' => isset($geoData['country']) ? __('country.' . strtolower($geoData['country'])) : '',
+            'city' => isset($geoData['city']) ? $geoData['city'] : '',
+            'start' => isset($start) ? $start : 'unknown',
             'today' => $today,
             'quote' => $quote
         ]);
