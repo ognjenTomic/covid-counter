@@ -7,4 +7,5 @@ return [
     'citation' => 'Here\'s a  <span class="text-block rose">quote</span>  from the illustrious Winston Churchill :',
     'map' => 'map',
     'advices' => 'advices',
+    'toilet-paper' => 'https://www.amazon.com/s?k=toilet+paper',
 ];

@@ -7,4 +7,5 @@ return [
     'citation' => 'Aquí una <span class="text-block rose">cita</span>  del ilustro Winston Churchill :',
     'map' => 'mapa',
     'advices' => 'consejos',
+    'toilet-paper' => 'https://www.amazon.es/s?k=papel+del+water&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_2',
 ];

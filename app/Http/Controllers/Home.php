@@ -14,7 +14,7 @@ class Home extends Controller
         $geoData = geoip()->getLocation(env('IP'));
         $date = Carbon::today();
         $today = ucwords($date->isoFormat('dddd Do MMMM'));
-        $quote = __('quotes.' . rand(0,6));
+        $quote = __('quotes.' . rand(0,10));
 
         $start = 'unknown';
         if (isset($geoData['country'])){
@@ -41,7 +41,8 @@ class Home extends Controller
             'city' => isset($geoData['city']) ? $geoData['city'] : '',
             'start' => isset($start) ? $start : 'unknown',
             'today' => $today,
-            'quote' => $quote
+            'quote' => $quote,
+            'url' => env('APP_URL')
         ]);
     }
 }

@@ -9,6 +9,34 @@
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
         <link rel="stylesheet" href="css/flip.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta property="og:title" content="{{ __('seo.title') }}" />
+        <meta property="og:url" content="{{ $url }}" />
+        <link rel="image_src" href="{{ $url }}/logo.png" />
+        <meta property="og:image" content="{{ $url }}/logo.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="{{ __('seo.description') }}" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="{{ __('seo.title') }}" />
+        <meta property="twitter:description" content="{{ __('seo.description') }}" />
+        <meta property="twitter:image" content="{{ $url }}/logo.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -78,7 +106,7 @@
                 <a class="link-1" href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019" target="_blank">COVID19</a>
                 <a href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank">{{ __('messages.advices') }}</a>
                 <a href="https://google.com/covid19-map" target="_blank">{{ __('messages.map') }}</a>
-                <a href="https://www.amazon.com/s?k=toilet+paper" target="_blank">🧻</a>
+                <a href="{{ __('messages.toilet-paper') }}" target="_blank">🧻</a>
                 <a href="#">#stayathome</a>
             </p>
 
