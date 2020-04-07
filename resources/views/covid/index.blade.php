@@ -25,15 +25,14 @@
                     @else
                     {!! __('messages.welcome', ['today' => $today, 'country' => $country, 'city' => $city]) !!}
                     @endif
-
                 </div>
-                <div class="title m-b-md">
-                    {{ __('messages.title') }}
-                </div>
+                @if ($start != 'unknown')
+                    <div class="title m-b-md">
+                        {{ __('messages.title') }}
+                    </div>
+                @endif
                 <div class="container">
-                    @if ($start === 'unknown')
-                    {{ __('messages.unknown') }}
-                    @else
+                    @if ($start != 'unknown')
                     <div class="tick m-b-md"
                         data-did-init="handleTickInit">
                         <div data-repeat="true"

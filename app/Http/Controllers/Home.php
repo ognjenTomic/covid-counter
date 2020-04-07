@@ -35,7 +35,7 @@ class Home extends Controller
         } else {
             $geoData['country'] = $geoData['city'] = 'unknown';
         }
-
+$start = 'unknown';
         return view('covid.index',[
             'country' => isset($geoData['country']) ? __('country.' . strtolower($geoData['country'])) : '',
             'city' => isset($geoData['city']) ? $geoData['city'] : '',
