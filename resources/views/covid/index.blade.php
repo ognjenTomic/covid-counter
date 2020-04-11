@@ -106,7 +106,7 @@
 
             <a href="https://www.twitter.com/sarimarcus/" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/olivierdepiesse/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/Sarimarcus/covid-counter/"><i class="fa fa-github"></i></a>
+            <a href="https://github.com/Sarimarcus/covid-counter/" target="_blank"><i class="fa fa-github"></i></a>
 
         </div>
 
