@@ -3,5 +3,6 @@
 return [
     'spain' => 'España',
     'france' => 'Francia',
-    'serbia' => 'Serbia'
+    'serbia' => 'Serbia',
+    'germany' => 'Alemania',
 ];
