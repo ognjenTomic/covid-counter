@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'spain' => 'Spain',
-    'france' => 'France'
+    'spain' => 'Španija',
+    'france' => 'Francuska'
 ];
