@@ -124,7 +124,8 @@
         </div>
 
     </footer>
-
+    <script src="{{ mix('/js/app.js') }}"></script>
+    <script src="js/flip.min.js"></script>
     <script>
         function handleTickInit(tick) {
 
@@ -160,8 +161,5 @@
 
         }
     </script>
-
-    <script src="{{ mix('/js/app.js') }}"></script>
-    <script src="js/flip.min.js"></script>
 </body>
 </html>
