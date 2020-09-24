@@ -2,5 +2,7 @@
 
 return [
     'spain' => 'Espagne',
-    'france' => 'France'
+    'france' => 'France',
+    'serbia' => 'Serbie',
+    'germany' => 'Allemagne',
 ];
